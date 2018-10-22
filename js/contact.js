@@ -11,7 +11,8 @@ $( "#contact-us-form" ).submit(function( event ) {
     email: email,
     ctry: ctry,
     fname: fname,
-    lname: lname
+    lname: lname,
+    comments: ''
   };
 
   $.ajax({
