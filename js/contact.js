@@ -5,6 +5,7 @@ $( "#contact-us-form" ).submit(function( event ) {
   lname = $('#lname').val(),
   email = $('#email').val(),
   ctry = $('#ctry').val(),
+  comments = $('#comments').val(),
   $form = $(this),
   url = $form.attr("action"),
   data = {
@@ -12,7 +13,7 @@ $( "#contact-us-form" ).submit(function( event ) {
     ctry: ctry,
     fname: fname,
     lname: lname,
-    comments: ''
+    comments: comments || ''
   };
 
   $.ajax({
